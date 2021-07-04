@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/profile_nav_user"
+            android:icon="@drawable/user_profile"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/profile_nav_donor"
+            android:icon="@drawable/donor_profile"
+            android:title="Donor Profile" />
+
+        <item
+            android:id="@+id/profile_nav_request"
+            android:icon="@drawable/request_profile"
+            android:title="My Requests" />
+
+        <item
+            android:id="@+id/profile_nav_logout"
+            android:icon="@drawable/logout_profile"
+            android:title="Logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddRequest">
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="-12dp"
+        android:src="@drawable/logform" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/addback" />
+
+    <ImageView
+        android:id="@+id/backmain"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:src="@drawable/arrow_back" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="REQUEST FOR BLOOD"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="325dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:fillViewport="true"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Blood for"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/bd_for"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinnnerback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="95dp"
+                android:text="District Preference"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/requestDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/spinnnerback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="190dp"
+                android:text="Select Blood Group"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/requestBloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/a_plus_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/a_plus_selector"
+                    android:button="@color/trans" />
+
+                <RadioButton
+                    android:id="@+id/a_negative_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/a_negative_selector"
+                    android:button="@color/trans" />
+
+                <RadioButton
+                    android:id="@+id/b_plus_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/b_plus_selector"
+                    android:button="@color/trans" />
+
+                <RadioButton
+                    android:id="@+id/b_negative_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/b_negative_selector"
+                    android:button="@color/trans" />
+
+                <RadioButton
+                    android:id="@+id/o_plus_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/o_plus_selector"
+                    android:button="@color/trans" />
+
+                <RadioButton
+                    android:id="@+id/o_negative_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/o_negative_selector"
+                    android:button="@color/trans" />
+
+                <RadioButton
+                    android:id="@+id/ab_plus_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-346dp"
+                    android:layout_marginTop="55dp"
+                    android:background="@drawable/ab_plus_selector"
+                    android:button="@color/trans" />
+
+                <RadioButton
+                    android:id="@+id/ab_negative_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="55dp"
+                    android:background="@drawable/ab_negative_selector"
+                    android:button="@color/trans" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/addRequest"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/requestBloodGroup"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btnback"
+                android:elevation="5dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

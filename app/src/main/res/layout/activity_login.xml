@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Login">
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="-12dp"
+        android:src="@drawable/logform" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="245dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logback" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="LOGIN &amp; REGISTRATION"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/userTelephoneLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/textback"
+        android:hint="Telephone Number"
+        android:inputType="phone"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/userPasswordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/textback"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:gravity="center"
+        android:text="Forgot Password ?"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/btnback"
+        android:elevation="5dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="630dp"
+        android:gravity="center"
+        android:text="Don't have you Account?"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/login_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="670dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Register Here"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+</RelativeLayout>

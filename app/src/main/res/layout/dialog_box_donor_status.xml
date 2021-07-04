@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/explore_back">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="You are Already a Donor !!!"
+            android:textSize="28dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="70dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="To manage your donor profile go to My Profile Menu."
+            android:textSize="14dp"
+            android:gravity="center"
+            android:textColor="@color/grey"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="105dp"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/status"/>
+        <TextView
+            android:id="@+id/dialog_status_ok"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:text="OK"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="155dp"
+            android:textColor="@color/dialog"/>
+    </RelativeLayout>
+</RelativeLayout>

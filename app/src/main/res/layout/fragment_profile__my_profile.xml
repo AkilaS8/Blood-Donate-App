@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Profile_MyProfile">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/back_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="1dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/profile" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="serif"/>
+
+        <androidx.core.widget.NestedScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/back_image">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Profile Information"
+                    android:textSize="15dp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="40dp"/>
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Akila Ishan"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="65dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Telephone Number"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="95dp"/>
+                <TextView
+                    android:id="@+id/profile_telephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0777123456"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="120dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="150dp"/>
+                <TextView
+                    android:id="@+id/profile_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chilaw Road, Marawila."
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="175dp"/>
+
+                <View
+                    android:id="@+id/change_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line"
+                    android:layout_below="@+id/profile_address"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Change Password"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/change_line"
+                    android:layout_marginTop="10dp"/>
+                <ToggleButton
+                    android:id="@+id/edit_password"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/change_line"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/edit_toggle_btton"/>
+                <RelativeLayout
+                    android:id="@+id/profile_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/change_line">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Currant Password"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="35dp"/>
+                    <EditText
+                        android:id="@+id/profile_cu_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="80dp"
+                        android:hint="Currant Password"
+                        android:inputType="textPassword"
+                        android:layout_marginTop="52dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter New Password"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="110dp"/>
+                    <EditText
+                        android:id="@+id/profile_nw_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="80dp"
+                        android:hint="Enter New Password"
+                        android:inputType="textPassword"
+                        android:layout_marginTop="127dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Re-Enter New Password"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="185dp"/>
+                    <EditText
+                        android:id="@+id/profile_nw_re_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="80dp"
+                        android:hint="Re-Enter New Password"
+                        android:inputType="textPassword"
+                        android:layout_marginTop="202dp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

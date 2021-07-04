@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="12dp"
+    android:id="@+id/bank_details"
+    app:cardCornerRadius="15dp">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/hospital"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/bank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Blood Bank"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/bank_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="40dp"
+        android:text="Mathale"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/bank_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="65dp"
+        android:text="djgo,sdgno"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/bank_telephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="90dp"
+        android:text="0777123456"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="43dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/location" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="68dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/address" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="93dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cantact" />
+</androidx.cardview.widget.CardView>
